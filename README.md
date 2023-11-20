@@ -1,3 +1,4 @@
-- 👋 Hi, I’m @Dislegend
-I'm interested in basic python coding, I hope my posts will inform you and help you
-I like to research
+- 👋 Hi, I’m @cybersavas
+Programmation
+CyberSecurity
+ANDROID/IOS Hacking

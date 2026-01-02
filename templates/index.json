@@ -1,0 +1,86 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero",
+      "settings": {
+        "eyebrow": "Yeni Koleksiyon",
+        "heading": "Kendine güven katan tasarımlar",
+        "subheading": "Modern, konforlu ve dayanıklı ürünlerle tarzını öne çıkar.",
+        "primary_button_label": "Hemen incele",
+        "primary_button_link": "/collections",
+        "secondary_button_label": "Hikayemiz",
+        "secondary_button_link": "/pages/about",
+        "background_image": "shopify://shop_images/hero.jpg"
+      }
+    },
+    "features": {
+      "type": "feature-grid",
+      "blocks": {
+        "feature-1": {
+          "type": "feature",
+          "settings": {
+            "icon": "🚀",
+            "title": "Hızlı Teslimat",
+            "text": "Siparişlerin 24 saat içinde kargoda, zahmetsiz alışveriş deneyimi."
+          }
+        },
+        "feature-2": {
+          "type": "feature",
+          "settings": {
+            "icon": "✨",
+            "title": "Seçkin Malzemeler",
+            "text": "Uzun ömürlü ve nefes alan kumaşlar, her gün konfor."
+          }
+        },
+        "feature-3": {
+          "type": "feature",
+          "settings": {
+            "icon": "🤝",
+            "title": "Koşulsuz Destek",
+            "text": "7/24 müşteri desteği ve kolay iade süreci."
+          }
+        }
+      },
+      "block_order": ["feature-1", "feature-2", "feature-3"],
+      "settings": {
+        "heading": "Mükemmel Deneyim için Tasarlandı",
+        "subheading": "Koleksiyonlarımızdaki her parça, şıklık ve performansı birleştirir."
+      }
+    },
+    "testimonials": {
+      "type": "testimonial-carousel",
+      "blocks": {
+        "testimonial-1": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "Ürünlerin kalitesi beklediğimin çok üstünde, herkese tavsiye ederim!",
+            "author": "Defne A.",
+            "role": "Moda Editörü"
+          }
+        },
+        "testimonial-2": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "Hızlı teslimat ve mükemmel paketleme. Yeni favori markam!",
+            "author": "Ege K.",
+            "role": "Dijital Pazarlama Uzmanı"
+          }
+        },
+        "testimonial-3": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "Konfor ve şıklığı aynı anda sunuyor, muhteşem!",
+            "author": "Melis T.",
+            "role": "Stil Danışmanı"
+          }
+        }
+      },
+      "block_order": ["testimonial-1", "testimonial-2", "testimonial-3"],
+      "settings": {
+        "heading": "Binlerce mutlu müşteri",
+        "subheading": "Gerçek kullanıcı deneyimleri ve samimi yorumlar."
+      }
+    }
+  },
+  "order": ["hero", "features", "testimonials"]
+}

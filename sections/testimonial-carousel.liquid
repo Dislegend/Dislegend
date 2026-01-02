@@ -1,0 +1,80 @@
+<section class="testimonial-carousel">
+  <div class="container">
+    <div class="section-heading">
+      <h2>{{ section.settings.heading }}</h2>
+      <p>{{ section.settings.subheading }}</p>
+    </div>
+    <div class="testimonial-carousel__items">
+      {% for block in section.blocks %}
+        <article class="testimonial" {{ block.shopify_attributes }}>
+          <p class="testimonial__quote">“{{ block.settings.quote }}”</p>
+          <p class="testimonial__author">{{ block.settings.author }}</p>
+          <p class="testimonial__role">{{ block.settings.role }}</p>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Yorumlar",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Başlık",
+      "default": "Binlerce mutlu müşteri"
+    },
+    {
+      "type": "textarea",
+      "id": "subheading",
+      "label": "Alt Başlık",
+      "default": "Gerçek kullanıcı deneyimleri ve samimi yorumlar."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "Yorum",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "quote",
+          "label": "Alıntı",
+          "default": "Ürünlerin kalitesi beklediğimin çok üstünde, herkese tavsiye ederim!"
+        },
+        {
+          "type": "text",
+          "id": "author",
+          "label": "İsim",
+          "default": "Defne A."
+        },
+        {
+          "type": "text",
+          "id": "role",
+          "label": "Unvan",
+          "default": "Moda Editörü"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Yorumlar",
+      "category": "Sosyal Kanıt",
+      "blocks": [
+        {
+          "type": "testimonial"
+        },
+        {
+          "type": "testimonial"
+        },
+        {
+          "type": "testimonial"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,71 @@
+<section class="hero" style="background-image: url({{ section.settings.background_image | image_url: width: 2000 }});">
+  <div class="hero__overlay"></div>
+  <div class="hero__content container">
+    <p class="hero__eyebrow">{{ section.settings.eyebrow }}</p>
+    <h1 class="hero__heading">{{ section.settings.heading }}</h1>
+    <p class="hero__subheading">{{ section.settings.subheading }}</p>
+    <div class="hero__actions">
+      <a href="{{ section.settings.primary_button_link }}" class="btn btn--primary">{{ section.settings.primary_button_label }}</a>
+      <a href="{{ section.settings.secondary_button_link }}" class="btn btn--ghost">{{ section.settings.secondary_button_label }}</a>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Vitrin Kahramanı",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Üst Başlık",
+      "default": "Yeni Koleksiyon"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Başlık",
+      "default": "Kendine güven katan tasarımlar"
+    },
+    {
+      "type": "textarea",
+      "id": "subheading",
+      "label": "Alt Başlık",
+      "default": "Modern, konforlu ve dayanıklı ürünlerle tarzını öne çıkar."
+    },
+    {
+      "type": "url",
+      "id": "primary_button_link",
+      "label": "Birincil Buton Linki"
+    },
+    {
+      "type": "text",
+      "id": "primary_button_label",
+      "label": "Birincil Buton Metni",
+      "default": "Hemen incele"
+    },
+    {
+      "type": "url",
+      "id": "secondary_button_link",
+      "label": "İkincil Buton Linki"
+    },
+    {
+      "type": "text",
+      "id": "secondary_button_label",
+      "label": "İkincil Buton Metni",
+      "default": "Hikayemiz"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Arka Plan Görseli"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Vitrin Kahramanı",
+      "category": "Banner"
+    }
+  ]
+}
+{% endschema %}
